@@ -1,0 +1,30 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+    <ion-title title-center >   {{kg}}kg
+
+    </ion-title>
+    </button>
+
+
+
+
+
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item
+      *ngFor="let medicatie of medicatieverzameling"
+      (click)="gotoMedPage(medicatie)">
+      <h2>{{medicatie.merknaam}}</h2>
+      <p>{{medicatie.generisch}}</p>
+      <h3>{{medicatie.doel}}</h3>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>

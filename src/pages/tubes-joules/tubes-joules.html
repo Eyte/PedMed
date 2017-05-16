@@ -1,0 +1,29 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center>tubes & joules</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+  <ion-card   *ngFor ="let other of others">
+    <ion-card-content>
+      <ion-item
+    >
+      <h1> {{other.lft}}</h1>
+      <h2> </h2>
+      <h2>tube:         {{other.tube}}</h2>
+      <h2>defib:        {{other.defib}}</h2>
+      <h2>glucose:      {{other.glucose}}</h2>
+      </ion-item>
+
+
+  </ion-card-content>
+</ion-card>
+</ion-list>
+
+</ion-content>

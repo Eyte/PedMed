@@ -1,0 +1,33 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>
+
+      <h1>{{merknaam}}</h1>
+      <h5>{{generisch}}</h5>
+      <h3 >{{doel}}</h3>
+      {{kg}}kg
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      <h1>{{merknaam}}</h1>
+      <h2>{{generisch}}</h2>
+      <p>{{dosis}}</p>
+      <h3>{{vorm}}</h3>
+      <p>{{info}}</p>
+        {{med}}
+      <h1 color="danger">{{Resultaat()}}</h1>
+
+
+  </ion-card-content>
+</ion-card>
+  <button ion-button color="danger" (click)="onClose()">back</button>
+
+</ion-content>

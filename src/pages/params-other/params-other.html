@@ -1,0 +1,32 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center >parameters </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+
+
+<ion-content padding>
+  <ion-list>
+  <ion-card   *ngFor ="let param of params">
+    <ion-card-content>
+      <ion-item
+    >
+      <h1> leeftijd: {{param.lft}}</h1>
+      <h2> </h2>
+      <h2> pols:        {{param.HR}}</h2>
+      <h2> Bloeddruk:   {{param.BP}}</h2>
+      <h2> Ademhaling:  {{param.RR}}</h2>
+      </ion-item>
+
+
+  </ion-card-content>
+</ion-card>
+</ion-list>
+
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Medicatie
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <ion-list>
+    <button ion-item ion-alpha-scroll *ngFor="let medicatie of medicatieverzameling" >
+    <h1>{{medicatie.merknaam}}</h1>
+      <h2>{{medicatie.generisch}}</h2>
+
+    <h3>{{medicatie.vorm}}</h3>
+    <h3>{{medicatie.doel}}</h3>
+
+    <h2>{{medicatie.dosis}}</h2>
+        <p>{{medicatie.info}}</p>
+    </button>
+  </ion-list>
+</ion-content>
